@@ -1,13 +1,13 @@
 var katzDeli =[];
-var katzDeliLine = ["Anthony", "Justin", "Enoch"];
-function takeANumber(katzDeliLine, newName) {
-  katzDeliLine.push(newName);
-   return "Welcome, " + newName + ". You are number " + katzDeliLine.length + " in line.";
+function takeANumber(katzDeli) {
+  var counter = 0;
+  return counter++;
+   return "Welcome, " + newName + ". You are number " + katzDeli.length + " in line.";
 }
 
-function nowServing(katzDeliLine) {
-  if(katzDeliLine.length !== 0) {
-    return "Currently serving " + katzDeliLine.shift() + ".";
+function nowServing(katzDeli) {
+  if(katzDeli.length !== 0) {
+    return "Currently serving " + katzDeli.shift() + ".";
   } else {
     return "There is nobody waiting to be served!";
   }
